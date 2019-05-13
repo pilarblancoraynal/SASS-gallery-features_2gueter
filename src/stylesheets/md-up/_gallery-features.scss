@@ -1,0 +1,46 @@
+/************ GALLERY **********/
+
+
+.features .item{
+	background: lighten($primary-color, 20%);
+	color: $white;
+	padding: 20px;
+	width: calc-perc(250, 1060 );
+}
+
+	/************ GALLERY **********/
+	#gallery {
+		& .item {
+			width: 33.3333%;
+		}
+		&:nth-child(3n + 1) {
+			clear: left;
+		}
+	}
+	
+@media only screen and (min-width: 992px) {
+
+	#gallery .item {
+	 transition: opacity .3s;
+	}
+
+	#gallery .item:hover {
+	 opacity: .7;
+	}
+	
+}
+
+	#gallery .item:nth-child(2n + 1) {
+		clear: left;
+	}
+	
+/************ FEATURES **********/
+.features {
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+
+
+
